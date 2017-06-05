@@ -1,0 +1,28 @@
+{
+    "name": "structure",
+    "descripton": "Structure",
+    "authors": [
+        {
+            "name": "Lucas Lellis",
+            "email": "llellismachado@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5",
+        "slim/slim": "^3.0",
+        "slim/php-view": "^2.1",
+        "illuminate/database": "5.3.*",        
+        "slim/flash": "^0.2.0",
+        "aws/aws-sdk-php": "2.*",
+        "phpmailer/phpmailer": "~5.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Back\\": "back",
+            "Back\\Helpers\\": "back/helpers",
+            "Back\\Models\\": "back/models",
+            "Back\\Middleware\\": "back/middleware"
+        }
+    }
+}

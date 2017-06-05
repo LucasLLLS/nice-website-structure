@@ -1,0 +1,5 @@
+node_modules
+vendor
+.sass-cache
+ambiente/config_*
+front/uploads/*
