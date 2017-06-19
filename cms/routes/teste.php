@@ -63,7 +63,7 @@ $app->group('/teste', function() use ($app) {
 	});
 
 
-	// EDITA ARTIGOS
+	// EDITA 
 	$app->get('/edit/{id}[/]', function ($request, $response, $args) use($app) {
 
 		$path = "teste";
@@ -112,7 +112,7 @@ $app->group('/teste', function() use ($app) {
 		$id = isset($args['id']) && $args['id'] ? $args['id'] : false;
 
 		$teste = \Back\Models\Teste::find( $id );
-		$current_img = $artigo->imagem;
+		$current_img = $teste->imagem;
 
 		if($_FILES['imagem']['size'] > 0){
 
@@ -129,7 +129,7 @@ $app->group('/teste', function() use ($app) {
 			}else{
 
 				$file = $upFile->envia();
-				$artigo->imagem = $file;
+				$teste->imagem = $file;
 
 				if(!is_null($current_img)){
 					$upFile->deleta( $current_img, PATH_UPLOADS );

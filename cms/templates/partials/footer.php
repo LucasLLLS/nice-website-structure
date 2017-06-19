@@ -1,12 +1,7 @@
 
 </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> 1.0
-    </div>
-    <strong>Developed by <a href="http://www.face2face.com.br" target="_blank">F2F</a></strong>
-</footer>
+
 
 </div><!-- ./wrapper -->
 

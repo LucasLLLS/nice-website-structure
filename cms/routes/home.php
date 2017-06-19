@@ -11,7 +11,12 @@ $app->group('/', function() use ($app) {
 
 		$items = \Back\Models\Teste::all();
 
-		$vars = array('titlePage' => 'Dashboard', 'view' => $path.'/index', 'items' => $items, 'flashMessagens' => $flashMessagens );
+		$vars = array(
+			'titlePage' => 'Dashboard', 
+			'view' => $path.'/index', 
+			'items' => $items, 
+			'flashMessagens' => $flashMessagens 
+		);
 
 		return $this->view->render($response, 'index.php', $vars );
 	});
